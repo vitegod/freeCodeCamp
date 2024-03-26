@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form method="post" id="survey-form">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div class="form-element">
+          <label id="name-label" for="name">Enter Your Name: <input id="name" name="name" type="text" required placeholder="Enter your full name"/></label>
+        </div>
+        <div class="form-element">
+          <label id="email-label" for="email">Enter Your Email: <input id="email" name="email" type="email" required placeholder="Enter your email address"/></label>
+        </div>
+        <div class="form-element">
+        <label id="number-label" for="number">Input your age (years): <input id="number" type="number" name="age" min="13" max="120" placeholder="Enter your age"/></label>
+        </div>
+        <div class="form-element">
+        <label for="dropdown">Would option best describes your current role?
+          <select id="dropdown" name="role">
+            <option disables selected value>(Select current role)</option>
+            <option value="1">Student</option>
+            <option value="2">Employee</option>
+            <option value="3">Employer</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Answer the questions</legend>
+        <div class="form-element">
+        <label>Will you share this site to your friend?
+          <label for="sure"><input type="radio" id="sure" value="sure" name="share" />Sure</label>
+          <label for="not-sure"><input type="radio" id="not-sure" value="not-sure" name="share" />Not Sure</label>
+          <label for="thinking"><input type="radio" id="thinking" value="thinking" name="share" />Still thinking about it</label>
+        </label>
+        </div>
+        <div class="form-element">
+        <label>What is your preferred field of departure?
+          <label><input value="prefer" name="prefer" type="checkbox" />Front-end</label>
+          <label><input value="prefer" name="prefer" type="checkbox" />Back-end</label>
+          <label><input value="prefer" name="prefer" type="checkbox" />Software</label>
+          <label><input value="prefer" name="prefer" type="checkbox" />Artificial Intelligence</label>
+          <label><input value="prefer" name="prefer" type="checkbox" />Cyber Security</label>
+        </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Build an personal bio</legend>
+        <div class="form-element">
+        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+        </div>
+        <div class="form-element">
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding for 24 hours per day..."></textarea>
+        </label>
+        </div>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </body>
+</html>
