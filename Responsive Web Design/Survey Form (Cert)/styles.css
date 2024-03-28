@@ -36,19 +36,12 @@ body {
     margin: 0;
   }
   
-  input {
+  input, select {
     width: 100%;
-    margin: 0.5em 0;
+    margin: 0.7em 0;
     padding: 0.5em;
-    color: #FFFFFF;
+    color: #0a0a23;
     margin-bottom: 1em;
-  }
-  
-  select {
-    width: 100%;
-    margin: 1em 0;
-    padding: 1em;
-    color: #FFFFFF;
   }
   
   textarea {
@@ -58,4 +51,5 @@ body {
   input[type="radio"], input[type="checkbox"] {
     width: unset;
     margin-right: 0.5em;
+    color: #0a0a23;
   }
