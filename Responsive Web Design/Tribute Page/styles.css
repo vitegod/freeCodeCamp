@@ -1,0 +1,62 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+* {
+    font-size: 16px;
+    max-width: 200vw;
+    max-height: 500vh;
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px 1rem;
+    color: black;
+    background-color: #EEEEEE;
+    padding: 2.5rem;
+}
+
+#img-div {
+    text-align: center;
+}
+
+img {
+    width: max(600px, 18vw);
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    max-width: 100%;
+}
+
+h1, h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#subtitle, #quote {
+    text-align: center;
+    font-style: italic;
+}
+
+li {
+    margin: 6px auto;
+    max-width: 700px;
+}
+
+cite {
+    text-align: left;
+}
+
+.refer {
+    font-size: unset;
+    text-align: center;
+    margin: 0 1em;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+#img-caption {
+    position: relative;
+}
